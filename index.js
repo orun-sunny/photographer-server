@@ -19,6 +19,14 @@ app.get("/", async (req, res) => {
 //URI
 
 
+// const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.bmd33.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
+// const client = new MongoClient(uri, {
+
+
+
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+// });
 
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.bmd33.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
@@ -27,7 +35,7 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
 async function run() {
   try {
     await client.connect();
-    const database = client.db("car-portal");
+    const database = client.db("ecommerce");
     const user_collection = database.collection("users");
     const product_collection = database.collection("products");
     const order_collection = database.collection("orders");

@@ -1,15 +1,14 @@
-# Bd CARz-website-client-side-orun-sunny
+# photographer server-website-side-orun-sunny
 
-Live Site Link:  https://bd-carz.web.app/
-Client link: https://github.com/programming-hero-web-course-4/niche-website-client-side-orun-sunny
+Live Site Link:  
+Client link:
 
 we use to build these project:
 
-
 - NODE.JS
--Readme added
--.gitignore file added
-- .env.local  added
+  -Readme file added
+  -.gitignore file added
+- .env.local added
 - Bootstrap
 - Firebase
 - MongoDB
